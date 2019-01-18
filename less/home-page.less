@@ -24,11 +24,27 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        margin: 20px 3% 0 3%;
+      }
     }
   }
 
@@ -51,8 +67,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 50px 3%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -63,13 +88,23 @@
       }
 
       .btn {
-        .main-btn(40px, 150px, black, white)
+        .main-btn(40px, 150px, @btn-bg-color, white);
+
+        @media @phone {
+          .main-btn(50px, 100%, @btn-bg-color, white);
+          border-radius: 5px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
       
       img {
         width: 100%;
