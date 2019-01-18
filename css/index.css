@@ -170,7 +170,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: rgba(241, 241, 241, 0.5);
+  background: rgba(241, 241, 241, 0.7);
   border-bottom: 1px solid #dee2e6;
   position: fixed;
 }
@@ -194,6 +194,9 @@ p {
   text-decoration: none;
   color: black;
   font-size: 1.35rem;
+}
+.home .intro {
+  padding-top: 94px;
 }
 .home .intro img {
   max-width: 100%;
@@ -278,10 +281,18 @@ p {
   justify-content: center;
   align-items: center;
   border: 1px solid #22283A;
+  cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
-  background: white;
-  color: #22283A;
+  animation-name: btn-hov;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+@keyframes btn-hov {
+  100% {
+    background: white;
+    color: #22283A;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -295,11 +306,19 @@ p {
     justify-content: center;
     align-items: center;
     border: 1px solid #22283A;
+    cursor: pointer;
     border-radius: 5px;
   }
   .home .walk .walk-text .btn:hover {
-    background: white;
-    color: #22283A;
+    animation-name: btn-hov;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes btn-hov {
+    100% {
+      background: white;
+      color: #22283A;
+    }
   }
 }
 .home .walk .walk-img {

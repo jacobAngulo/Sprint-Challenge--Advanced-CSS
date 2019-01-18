@@ -17,9 +17,18 @@
     justify-content: center;
     align-items: center;
     border: 1px solid @bg-color;
+    cursor: pointer;
 
     &:hover {
-        background: @color;
-        color: @bg-color;
+        animation-name: btn-hov;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes btn-hov {
+        100% {
+            background: @color;
+            color: @bg-color;
+        }
     }
 }
