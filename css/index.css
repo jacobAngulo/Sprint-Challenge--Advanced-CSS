@@ -336,6 +336,19 @@ p {
   height: auto;
   border-radius: 10px;
 }
+.about-us .intro {
+  padding-top: 94px;
+}
+.about-us .intro img {
+  max-width: 100%;
+  height: auto;
+}
+.about-us .intro h2 {
+  padding: 15px;
+}
+.about-us .intro p {
+  padding: 0 15px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
