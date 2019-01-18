@@ -1,1 +1,25 @@
 // Mixins Here
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+// .main-btn(50px, 200px, black, white)
+.main-btn(@height, @width, @bg-color, @color) {
+    height: @height;
+    width: @width;
+    border-radius: 20px;
+    font-size: 2rem;
+    background: @bg-color;
+    color: @color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid @bg-color;
+
+    &:hover {
+        background: @color;
+        color: @bg-color;
+    }
+}
