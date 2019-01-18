@@ -248,7 +248,8 @@ p {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
-    padding: 50px 3%;
+    margin-top: 20px;
+    padding: 50px 3% 10px 3%;
   }
 }
 .home .walk .walk-text {
