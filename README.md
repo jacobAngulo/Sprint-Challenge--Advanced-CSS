@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-adaptive web design will have several design that correspond with screen size where responsive websites will only shrink and grow the original design.
+adaptive web design will have several design that correspond with screen size where fluid websites will only shrink and grow the original design. Responsive is both.
 
 2. Describe what it means to be mobile first vs desktop first.
 
